@@ -11,7 +11,7 @@ jobs:
           path: checkout
       - name: Build package action step
         id: buildstep
-        uses: IdyllicHappiness/aurPackageBuilderUsingParu@v7
+        uses: IdyllicHappiness/aurPackageBuilderUsingParu@v8
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
