@@ -5,13 +5,15 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to build the package
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          path: checkout
       - name: Build package action step
         id: buildstep
-        uses: IdyllicHappiness/aurPackageBuilderUsingParu@v6
-        with:
-          package: 'ffmpeg-full'
+        uses: IdyllicHappiness/aurPackageBuilderUsingParu@v7
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: workspace_artifacts
-          path: ${{ github.workspace }}
+          path: output/${{ github.workspace }}
