@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  build_package_job:
+    runs-on: ubuntu-latest
+    name: A job to build the package
+    steps:
+      - name: Build package action step
+        id: buildstep
+        uses: IdyllicHappiness/aurPackageBuilderUsingParu@v1
+        with:
+          package-to-build: 'tty-copy'
