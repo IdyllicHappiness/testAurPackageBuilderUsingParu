@@ -12,6 +12,8 @@ jobs:
       - name: Build package action step
         id: buildstep
         uses: IdyllicHappiness/aurPackageBuilderUsingParu@v10
+        with:
+          pre_pkgs: "jack2 tesseract-data-eng"
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
