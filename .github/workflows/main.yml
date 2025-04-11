@@ -9,7 +9,7 @@ jobs:
         id: buildstep
         uses: IdyllicHappiness/aurPackageBuilderUsingParu@v6
         with:
-          package: 'tty-copy'
+          package: 'ffmpeg-full'
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
