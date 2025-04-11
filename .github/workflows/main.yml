@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Build package action step
         id: buildstep
-        uses: IdyllicHappiness/aurPackageBuilderUsingParu@v4
+        uses: IdyllicHappiness/aurPackageBuilderUsingParu@v5
         with:
           package: 'tty-copy'
       - name: Upload Build Artifacts
