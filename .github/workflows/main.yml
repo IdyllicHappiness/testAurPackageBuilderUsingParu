@@ -7,6 +7,6 @@ jobs:
     steps:
       - name: Build package action step
         id: buildstep
-        uses: IdyllicHappiness/aurPackageBuilderUsingParu@v1
+        uses: IdyllicHappiness/aurPackageBuilderUsingParu@v2
         with:
-          package-to-build: 'tty-copy'
+          package: 'tty-copy'
